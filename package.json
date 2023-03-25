@@ -1,14 +1,18 @@
 {
-  "name": "newsapp",
+  "name": "speednews",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@svgr/webpack": "^6.5.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "^5.0.1",
+    "react-top-loading-bar": "^2.3.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -22,6 +26,11 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "@svgr/webpack": "$@svgr/webpack",
+    "react-dom": "^18.2.0"
   },
   "browserslist": {
     "production": [
